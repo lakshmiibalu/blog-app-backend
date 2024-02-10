@@ -19,4 +19,10 @@ router.get("/view",async(req,res)=>{
     res.json(data)
 })
 
+router.get("/mypost",async(req,res)=>{
+    let input = req.body
+    let result = await postModel.find(input)
+    res.json(result)
+})
+
 module.exports = router
