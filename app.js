@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 
 const app = express()
+
 const blogRoute = require("./controller/blogRoute")
 const postRoute = require("./controller/postRoute")
 
